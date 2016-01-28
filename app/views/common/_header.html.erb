@@ -1,0 +1,9 @@
+<div class="pull-right" style="margin:10px 15px;">
+<% if account_signed_in? %>
+	<%= current_account.email %>
+	<%= link_to '登出', destroy_account_session_path, method: :delete, class:'btn btn-default' %>
+<% else %>
+	<%= link_to '註冊', new_account_registration_path, class:'btn btn-info' %>
+	<%= link_to '登入', new_account_session_path, class:'btn btn-info' %>
+<% end %>
+</div>

@@ -1,0 +1,6 @@
+<%= simple_form_for(@user) do |f| %>
+  <%= f.input :name, placeholder: '姓名' %>
+  <%= f.input :content, placeholder: '地點/物品' %>
+  <%= f.input :money, placeholder: '金額' %>
+  <%= f.submit "儲存", class:'btn btn-info pull-left' %><%= link_to '返回', users_path, class:'btn btn-danger pull-right' %>
+<% end %>
